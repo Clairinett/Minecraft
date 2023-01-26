@@ -37,12 +37,12 @@ header > div > ul > li > a:visited {
     color: #93cd76;
 } 
 
-header > a {
+header > span {
     background-color:#171615;
     height: 55px;
-}
+}  
 
-header > a > img {
+header > span > a {
     width: 200px;
     height: 70px;
     display: flex;
@@ -58,10 +58,14 @@ header > nav {
     height: 40px;
 } 
 
-/*header > a {
+header > span nav, header:not(header > div) {
     position: sticky;
     top: 0px;
-}  */
+ 
+    /*z-index a voir*/
+}  
+
+
 
 header > nav > ul, header > nav > ul > li {
     color:white;
@@ -121,7 +125,17 @@ main > section:nth-of-type(1) {
     padding: 100px 390px 0px 100px;
 }
 
-main > section:nth-of-type(1) > h1 {
+/*main > section:nth-last-of-type(1) > article {
+    display: flex;
+    justify-content: center;
+} */
+
+main > section:nth-of-type(1) > article > p {
+    display: flex;
+    justify-content: center;
+}
+
+main > section:nth-of-type(1) > article > h1 {
     text-transform: uppercase;
     color: white;
     font-size: 36px;
@@ -131,13 +145,13 @@ main > section:nth-of-type(1) > h1 {
     padding-bottom: 15px
 }
 
-main > section:nth-of-type(1) > div {
+main > section:nth-of-type(1) > article > div {
     text-decoration: none;
     padding-top: 30px;
     color: white;
 } 
 
-main > section:nth-of-type(1) > div > a > button {
+main > section:nth-of-type(1) > article > div > a > button {
     background-color: #3b8526;
     box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c, 0 4px rgb(0 0 0 / 25%); 
     color: white;
@@ -149,7 +163,7 @@ main > section:nth-of-type(1) > div > a > button {
     padding: 5px 50px;
 }
 
-main > section:nth-of-type(1) > div > a > button:hover {
+main > section:nth-of-type(1) > article > div > a > button:hover {
     background-color: #171615;
     transition: all .25s, opacity .75s .5s;
     box-shadow: inset 0 0 0 2px #1157be;
@@ -159,7 +173,7 @@ main > section:nth-of-type(1) > div > a > button:hover {
     position: absolute;
 }
 
-main > section:nth-of-type(1) > div > a:visited {
+main > section:nth-of-type(1) > article > div > a:visited {
     color: white;
     text-decoration: none;
 }
@@ -173,7 +187,8 @@ main > section:nth-of-type(2) {
     background-image: url(https://www.minecraft.net/content/dam/minecraft/backgrounds/bg-wool-dark.png);
     background-repeat: repeat;
     padding: 50px 125px 50px 125px;
-
+    display: flex;
+    justify-content: center;
 }
 
 main > section:nth-of-type(2) > article {
@@ -183,36 +198,62 @@ main > section:nth-of-type(2) > article {
     justify-content: center;
     align-items: center;
     align-content: center;
-    padding: 50px 50px 50px 50px;
-
+    padding: 45px 50px 55px 50px;
+    width: 1050px;
 }
 
 main > section:nth-of-type(2) > article > h1 {
     display: flex;
     justify-content: flex-start;
-    flex-direction: column;
     text-transform: uppercase;
+    align-items: flex-start;
     font-size: 26px;
     font-weight: 700;
     letter-spacing: 1px;
-
-
 } 
 
-main > section:nth-of-type(2) > article > div {
+main > section:nth-of-type(2) > article > span {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
     align-content: center;
-    align-items: center;
-    padding: 50px
-
+    align-items: baseline;
+    padding: 45px
 }
 
-/*main > section:nth-of-type(2) > article > div > a {
-    height:
+main > section:nth-of-type(2) > article > span > div > a > img {
+    height: 350px;
+    widht: auto;
+    padding-bottom: 25px;
+    padding-right: 30px;
+}   
 
-}    */
+main > section:nth-of-type(2) > article > span > div > p {
+    font-size: 14px;
+    text-align: center;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+main > section:nth-of-type(2) > article > span > div > a {
+    padding-top: 20px;
+    padding-left: 30px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    color: #196d17;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    justify-content: cent;
+}
 
 
+main > section:nth-of-type(2) > article > span > div > a:hover {
+    color: black;
+}
+
+main > section:nth-of-type(2) > article > span > div > a:visited {
+    text-decoration: none;
+}
