@@ -12,9 +12,30 @@ header > div {
     background-color: black;
     display:flex;
     flex-direction: row;
-    justify-content:flex-end;
+    justify-content: space-between;
     align-content: center;
     align-items: center;
+    height: 32px;  /*de base c'est 35px voir 36.2778px*/
+}
+
+header > div > span, header > div > span > a {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    align-content: center;
+    margin-left: 28px;
+    color: #a0e081;
+    text-decoration: none;
+    font-size: 9.5px; /*de base c'est 11px */
+    font-family: Helvetica Neue ,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    letter-spacing: 1.5;
+    line-height: initial;
+}
+
+header > div > span:hover, header > div > span > a:hover {
+    color: white;
+    text-decoration: underline;
 }
 
 header > div > ul,  header > div > ul > li a {
@@ -27,44 +48,38 @@ header > div > ul,  header > div > ul > li a {
     flex-direction: row;
     justify-content: space-between;
     height: 30px;
-    margin-right: 20px;
-    font-size: small;
-    font-weight: bold;
+    padding-right: 30px;
+    font-size: .75rem;
+    font-weight: 700;
     text-decoration: none;
+}
+
+header > div > ul:hover,  header > div > ul > li a:hover {
+    color: white
 }
 
 header > div > ul > li > a:visited {
     color: #93cd76;
 } 
 
-header > span {
-    background-color:#171615;
-    height: 55px;
-}  
 
-header > span > a {
-    width: 200px;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
 
 header > nav {
     background-color:#171615;
-    display:flex;
+    display: flex;
     flex-direction: row;
-    height: 40px;
+    justify-content: space-between;
+    height: 75px;
+    
 } 
 
-header > span nav, header:not(header > div) {
+/*header > nav, header > nav > ul > li, header > nav > span, header > nav > a {      
     position: sticky;
     top: 0px;
- 
-    /*z-index a voir*/
-}  
+    left: 0px;
+    right: 0px;
 
+}  */
 
 header > nav > ul, header > nav > ul > li {
     color:white;
@@ -72,14 +87,20 @@ header > nav > ul, header > nav > ul > li {
     text-transform: uppercase;
     text-decoration: none;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    flex-direction: row;
-    justify-content: space-around;
+    align-content: center;
     flex-wrap: nowrap;
-    text-align: justify;
-    margin-right: 40px;
-    font-size: small;
-    font-weight: bold;
+    padding-right: 13px;
+    padding-left: 13px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.96px;
+    line-height: 18px;
+}
+
+header > nav > ul > li > a > img {
+    margin-left: 7.5px;
 }
 
 header > nav > ul > li > a,  header > nav > ul > li > a:visited {
@@ -87,21 +108,33 @@ header > nav > ul > li > a,  header > nav > ul > li > a:visited {
     color: white;
 }
 
-header > nav > a:not(ul) {
+header > nav > ul >li:first-of-type {
+    padding-right: 30px;
+}
+
+header > nav > span > a > img {
+    width: 200px;              
+    height: 80px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding-right: 330px;
+}  
+
+header > nav > a {
     color: #93cd76 ;
     text-transform: uppercase;
     display: flex;
     align-items: center;
+    align-content: center;
     justify-content: flex-end;
     font-size: small;
     font-weight: bold;
     text-decoration: none;
-    padding-left: 180px;
+    padding-right: 13px;
+    padding-left: 13px;
 }
 
-header > nav > ul > li > a > img {
-    margin-left: 7.5px;
-}
 
 
 
@@ -111,8 +144,8 @@ main > section:nth-of-type(1) {
     background-position: top;
     background-repeat: no-repeat;  
     background-color: black;
-    background-size: 1100px;   
-    height: 550px;
+    background-size: 1080px;   
+    height: 540px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -122,24 +155,24 @@ main > section:nth-of-type(1) {
 }
 
 main > section:nth-of-type(1) > article {
-    padding: 100px 730px 50px 300px;
+    padding: 78px 730px 50px 310px;
+    line-height: 23px;  /*de base 26px interline du paragraphe*/
+
 }
 
 main > section:nth-of-type(1) > article > h1 {
     text-transform: uppercase;
-    font-size: 36px;
+    font-size: 33px;    /*de base 36px*/
     font-weight: 700;
-    line-height: 40px;
-    padding-bottom: 15px;
+    line-height: 36px;    /*de base 35 px*/
+    padding-bottom: 10px;  /*de base 15px */
     letter-spacing: 1px;
 }
 
 main > section:nth-of-type(1) > article > p {
     color: white;
-    font-weight: 400;
     font-size: 18px;
-    line-height: 26px;
-    padding-bottom: 20px;
+    padding-bottom: 13px; /*de base 20 */
 }
 
 main > section:nth-of-type(1) > article > div {
@@ -183,7 +216,7 @@ main > section:nth-of-type(1) > article > div > a:visited {
 main > section:nth-of-type(2) {
     background-image: url(https://www.minecraft.net/content/dam/minecraft/backgrounds/bg-wool-dark.png);
     background-repeat: repeat;
-    padding: 50px 125px 50px 125px;
+    padding: 50px 250px 50px 250px;
     display: flex;
     justify-content: center;
 }
@@ -220,7 +253,7 @@ main > section:nth-of-type(2) > article > span {
 
 main > section:nth-of-type(2) > article > span > div > a > img {
     height: 350px;
-    widht: auto;
+    width: auto;
     padding-bottom: 25px;
     padding-right: 30px;
 }   
@@ -246,7 +279,6 @@ main > section:nth-of-type(2) > article > span > div > a {
     justify-content: cent;
 }
 
-
 main > section:nth-of-type(2) > article > span > div > a:hover {
     color: black;
 }
@@ -254,3 +286,13 @@ main > section:nth-of-type(2) > article > span > div > a:hover {
 main > section:nth-of-type(2) > article > span > div > a:visited {
     text-decoration: none;
 }
+
+
+
+
+
+/*main > section:nth-of-type(3) {
+    background-image: url(https://www.minecraft.net/content/dam/minecraft/backgrounds/bg-wool-dark.png) url(https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/feature-content/trans-top-darkwool.png) ;
+    background-repeat: repeat no-repeat;
+}           a revoir*/
+
