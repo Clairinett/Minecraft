@@ -253,7 +253,7 @@ main > section:nth-of-type(2) > article {
     justify-content: center;
     align-items: center;
     align-content: center;
-    padding: 45px 50px 55px 50px;
+    padding: 80px 50px 55px 50px;
     width: 1050px;
 }
 
@@ -262,7 +262,7 @@ main > section:nth-of-type(2) > article > h1 {
     justify-content: flex-start;
     text-transform: uppercase;
     align-items: flex-start;
-    font-size: 26px;
+    font-size: 28px;
     font-weight: 700;
     letter-spacing: 1px;
 } 
@@ -280,19 +280,65 @@ main > section:nth-of-type(2) > article > span > div > a:visited {
 
 
 main > section:nth-of-type(3) {
-    background-image: url(https://www.minecraft.net/content/dam/minecraft/backgrounds/bg-wool-dark.png);
-    background-repeat: repeat;
-    position: top;
+    background-image: url(https://www.minecraft.net/content/dam/minecraft/backgrounds/bg-wool-dark.png), url(https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/feature-content/trans-top-darkwool.png);
+    background-repeat: repeat, no-repeat;
+    height: 600px;
 }           
 
-/*main > section:nth-of-type(3) > article {
-    background-image: url(https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/feature-content/trans-top-darkwool.png);
-    background-repeat: no-repeat;
+main > section:nth-of-type(3) > article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 50px
+}
 
+main > section:nth-of-type(3) > article > h1 {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: white;
+    padding-bottom: 50px;
+}
 
-}*/
+main > section:nth-of-type(3) > article > div > a > img {
+    padding-bottom: 25px;
+    padding-right: 30px;
+} 
 
+main > section:nth-of-type(3) > article > div > p {
+    font-size: 20px;
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 25px;
+    padding-top: 10px;
+    color: white;
+}
 
+main > section:nth-of-type(3) > article > div > a {
+    padding-top: 20px;
+    padding-left: 30px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+}
+
+main > section:nth-of-type(3) > article > div > a > span > img:hover {
+    border: solid 3px #2a631c;
+    /*toujours le problème de la bordure qu ibouge l'image*/
+
+} 
 
 
 
