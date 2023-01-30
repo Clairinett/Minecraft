@@ -70,7 +70,7 @@ header > nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 75px;
+    height: 85px;
 } 
 
 /*header > nav, header > nav > ul > li, header > nav > span, header > nav > a {      
@@ -100,7 +100,7 @@ header > nav > ul, header > nav > ul > li {
 }
 
 header > nav > ul > li > a > img {
-    margin-left: 7.5px;
+    margin-left: 5px;
 }
 
 header > nav > ul > li > a,  header > nav > ul > li > a:visited {
@@ -114,8 +114,9 @@ header > nav > ul >li:first-of-type {
 
 header > nav > span > a > img {
     width: 200px;              
-    height: 80px;
+    height: 100px;
     display: flex;
+    justify-content: center;
     align-items: center;
     align-content: center;
     padding-right: 330px;
@@ -132,6 +133,10 @@ header > nav > div {
     padding-left: 13px;
 }
 
+header > nav > div > a  {
+    text-decoration: none;
+}
+
 header > nav > div > a > button {
     display: flex;
     justify-content: center;
@@ -139,22 +144,21 @@ header > nav > div > a > button {
     text-align: center;
     white-space: nowrap;
     background-color: #3c8527;
-    box-shadow: inset 0 4px #52a535, 0 4px rgb(0 0 0 / 25%);
+    box-shadow: inset 0 4px #52a535, inset 0 -4px #2a631c;
     height: 3rem;
-    width: 13rem;
-    border-width: 0 0 0.25rem;
-    padding: 1rem 1.5rem;
+    width: 15rem;
+    border: 0px;
+    margin-right: 15px;
     color: white;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.25rem;
 }
 
 header > nav > div > a > button:hover {
     background-color: #2a641c;
     cursor: pointer;
-    text-decoration: none;
 }
 
 header > nav > div > a:visited {
@@ -179,20 +183,6 @@ main > section:nth-of-type(1) {
     align-content: center;
     text-align: left;
     color: white;
-}
-
-@media screen {
-    main > section:nth-of-type(1) > article {
-        padding: 78px 730px 50px 310px;
-        line-height: 23px;  /*de base 26px interline du paragraphe*/
-    }
-}
-
-@media (max-width: 960px) {
-    main > section:nth-of-type(1) > article { /*demi-écran pc*/
-        padding: 85px 200px 50px 80px;
-        line-height: 23px;  /*de base 26px interline du paragraphe*/
-    }
 }
 
 main > section:nth-of-type(1) > article > h1 {
@@ -238,7 +228,7 @@ main > section:nth-of-type(1) > article > div > a > button:hover {
     position: absolute;
 }
 
-main > section:nth-of-type(1) > article > div > a:visited {
+main > section:nth-of-type(1) > article > div > a:visited, main > section:nth-of-type(1) > article > div > a > button:visited {
     color: white;
     text-decoration: none;
 }
@@ -277,6 +267,63 @@ main > section:nth-of-type(2) > article > h1 {
     letter-spacing: 1px;
 } 
 
+main > section:nth-of-type(2) > article > span > div > a:hover {
+    color: black;
+}
+
+main > section:nth-of-type(2) > article > span > div > a:visited {
+    text-decoration: none;
+}
+
+
+
+
+
+main > section:nth-of-type(3) {
+    background-image: url(https://www.minecraft.net/content/dam/minecraft/backgrounds/bg-wool-dark.png);
+    background-repeat: repeat;
+    position: top;
+}           
+
+/*main > section:nth-of-type(3) > article {
+    background-image: url(https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/feature-content/trans-top-darkwool.png);
+    background-repeat: no-repeat;
+
+
+}*/
+
+
+
+
+
+@media screen {
+    main > section:nth-of-type(1) > article {
+        padding: 78px 980px 50px 450px;
+        line-height: 23px;  /*de base 26px interline du paragraphe*/
+    }
+    main > section:nth-of-type(1) {
+        background-image: url(https://www.minecraft.net/content/dam/minecraft/home/home-hero-1200x600.jpg);
+        background-position: top;
+        background-repeat: no-repeat;  
+        background-color: black;
+        background-size: 1200px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: center;
+        text-align: left;
+        color: white;
+    }
+}
+
+@media (max-width: 960px) {
+    main > section:nth-of-type(1) > article { /*demi-écran pc*/
+        padding: 85px 200px 50px 80px;
+        line-height: 23px;  /*de base 26px interline du paragraphe*/
+    }
+}
+
 @media screen {
     main > section:nth-of-type(2) > article > span {
         display: flex;
@@ -287,7 +334,7 @@ main > section:nth-of-type(2) > article > h1 {
         padding: 45px
     }
     main > section:nth-of-type(2) > article > span > div > a > img {
-        height: 350px;
+        height: 380px;
         width: auto;
         padding-bottom: 25px;
         padding-right: 30px;
@@ -356,21 +403,3 @@ main > section:nth-of-type(2) > article > h1 {
         justify-content: center;
     }
 }
-
-main > section:nth-of-type(2) > article > span > div > a:hover {
-    color: black;
-}
-
-main > section:nth-of-type(2) > article > span > div > a:visited {
-    text-decoration: none;
-}
-
-
-
-
-
-/*main > section:nth-of-type(3) {
-    background-image: url(https://www.minecraft.net/content/dam/minecraft/backgrounds/bg-wool-dark.png) url(https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/feature-content/trans-top-darkwool.png) ;
-    background-repeat: repeat no-repeat;
-}           a revoir*/
-
