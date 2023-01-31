@@ -241,7 +241,7 @@ main > section:nth-of-type(1) > article > div > a:visited, main > section:nth-of
 main > section:nth-of-type(2) {
     background-image: url(https://www.minecraft.net/content/dam/minecraft/backgrounds/bg-wool-dark.png);
     background-repeat: repeat;
-    padding: 50px 250px 50px 250px;
+    padding: 50px 250px 0px 250px;
     display: flex;
     justify-content: center;
 }
@@ -280,9 +280,9 @@ main > section:nth-of-type(2) > article > span > div > a:visited {
 
 
 main > section:nth-of-type(3) {
-    background-image: url(https://www.minecraft.net/content/dam/minecraft/backgrounds/bg-wool-dark.png), url(https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/feature-content/trans-top-darkwool.png);
-    background-repeat: repeat, no-repeat;
-    height: 600px;
+    background-image: url(https://www.minecraft.net/content/dam/minecraft/backgrounds/bg-wool-dark.png);
+    background-repeat: repeat;
+    height: 575px;
 }           
 
 main > section:nth-of-type(3) > article {
@@ -342,24 +342,67 @@ main > section:nth-of-type(3) > article > div > a > span > img:hover {
 
 
 
+
+
+
+main > section:nth-of-type(4) {
+    background-image: url(https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/feature-content/trans-top-darkwool.png), url(https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/feature-content/trans-bottom-darkwool.png), url(https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/feature-content/bg-wool-light.png);
+    background-repeat: repeat-x, repeat-x, repeat;
+    background-position: top, bottom, top;  
+    padding: 150px 300px 150px 300px; 
+}
+
+main > section:nth-of-type(4) > article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main > section:nth-of-type(4) > article > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+main > section:nth-of-type(4) > article > div > img {
+    height: 225px;
+}
+
+main > section:nth-of-type(4) > article > div > span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+}
+
+
+
+
+
+
+
+main > section:nth-of-type(5) {
+    background-image: url(https://www.minecraft.net/content/dam/minecraft/backgrounds/bg-wool-dark.png);
+    background-repeat: repeat-x;
+    background-position: top;
+    height: 150px;
+}
+
+main > section:nth-of-type(5) > article {
+    padding-top: 150px;
+}
+
+footer > a, footer > a > img {
+    height: 50px;
+}
+
+
 @media screen {
     main > section:nth-of-type(1) > article {
-        padding: 78px 980px 50px 450px;
+        padding: 78px 700px 50px 350px;   /*remettre à l'afpa padding-right 980px padding-left450*/
         line-height: 23px;  /*de base 26px interline du paragraphe*/
-    }
-    main > section:nth-of-type(1) {
-        background-image: url(https://www.minecraft.net/content/dam/minecraft/home/home-hero-1200x600.jpg);
-        background-position: top;
-        background-repeat: no-repeat;  
-        background-color: black;
-        background-size: 1200px;
-        height: 600px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-content: center;
-        text-align: left;
-        color: white;
     }
 }
 
