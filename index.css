@@ -206,7 +206,7 @@ main > section:nth-of-type(1) > article > div {
     color: white;
 } 
 
-main > section:nth-of-type(1) > article > div > a > button {
+main > section:nth-of-type(1) > article > div > a > button, main > section:nth-of-type(5) > article > button {
     background-color: #3b8526;
     box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c, 0 4px rgb(0 0 0 / 25%); 
     color: white;
@@ -218,17 +218,16 @@ main > section:nth-of-type(1) > article > div > a > button {
     padding: 5px 50px;
 }
 
-main > section:nth-of-type(1) > article > div > a > button:hover {
+main > section:nth-of-type(1) > article > div > a > button:hover, main > section:nth-of-type(5) > article > button:hover {
     background-color: #171615;
     transition: all .25s, opacity .75s .5s;
     box-shadow: inset 0 0 0 2px #1157be;
     /*border: outset 1.5px white;*/
     background-image: linear-gradient(#3d3938,#171615);
     cursor: pointer;
-    position: absolute;
 }
 
-main > section:nth-of-type(1) > article > div > a:visited, main > section:nth-of-type(1) > article > div > a > button:visited {
+main > section:nth-of-type(1) > article > div > a:visited, main > section:nth-of-type(1) > article > div > a > button:visited, main > section:nth-of-type(5) > article > button, main > section:nth-of-type(5) > article > button:visited {
     color: white;
     text-decoration: none;
 }
@@ -266,6 +265,20 @@ main > section:nth-of-type(2) > article > h1 {
     font-weight: 700;
     letter-spacing: 1px;
 } 
+
+main > section:nth-of-type(2) > article > span > div > a {
+    padding-top: 20px;
+    padding-left: 30px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    color: #196d17;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+}
 
 main > section:nth-of-type(2) > article > span > div > a:hover {
     color: black;
@@ -356,6 +369,8 @@ main > section:nth-of-type(4) > article {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 115px;
+    padding-right: 115px;
 }
 
 main > section:nth-of-type(4) > article > div {
@@ -366,7 +381,8 @@ main > section:nth-of-type(4) > article > div {
 }
 
 main > section:nth-of-type(4) > article > div > img {
-    height: 225px;
+    height: 300px;
+    padding-bottom: 65px;
 }
 
 main > section:nth-of-type(4) > article > div > span {
@@ -374,9 +390,33 @@ main > section:nth-of-type(4) > article > div > span {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-
+    padding-right: 25px;
+    padding-left: 25px;
 }
 
+main >section:nth-of-type(4) > article > div > span > h1 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+main > section:nth-of-type(4) > article > div > span > a, main > section:nth-of-type(4) > article > div > span > a:visited {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+    color: #196d17;
+    padding-top: 20px;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+main > section:nth-of-type(4) > article > div > span > a > img {
+    height: 15px;
+    margin-right: 5px;
+}
 
 
 
@@ -390,18 +430,91 @@ main > section:nth-of-type(5) {
     height: 150px;
 }
 
-main > section:nth-of-type(5) > article {
-    padding-top: 150px;
+main > section:nth-of-type(5) > article, main > section:nth-of-type(5) > article > div {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
-footer > a, footer > a > img {
+main > section:nth-of-type(5) > article > div > h1 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    padding-top: 50px;
+}
+
+main > section:nth-of-type(5) > article > div > p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+main > section:nth-of-type(5) > article > div > a > img {
+    height: 15px;
+    margin-right: 5px;
+}
+
+main > section:nth-of-type(5) > article > div > a, main > section:nth-of-type(4) > article > div > span > a:visited {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    color: #196d17;
+    padding-top: 20px;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 75px;
+}
+
+main > section:nth-of-type(5) > article > span > a, main > section:nth-of-type(5) > article > span > a > img {
+    padding-right: 4px;
+    padding-bottom: 75px;
+}
+
+main > section:nth-of-type(5) > article > p {
+    padding-top: 100px;
+}
+
+
+
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+footer > section:nth-of-type(1) {
+    background-color: black;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+
+footer > section:nth-of-type(1) > a, footer > section:nth-of-type(1) > a > img {
     height: 50px;
 }
 
 
 @media screen {
     main > section:nth-of-type(1) > article {
-        padding: 78px 700px 50px 350px;   /*remettre à l'afpa padding-right 980px padding-left450*/
+        padding: 78px 925px 50px 525px;   /*remettre à l'afpa padding-right 980px padding-left450*/
         line-height: 23px;  /*de base 26px interline du paragraphe*/
     }
 }
@@ -435,19 +548,7 @@ footer > a, footer > a > img {
         padding-left: 25px;
         padding-top: 10px;
     }
-    main > section:nth-of-type(2) > article > span > div > a {
-        padding-top: 20px;
-        padding-left: 30px;
-        text-transform: uppercase;
-        font-size: 18px;
-        font-weight: 700;
-        color: #196d17;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        text-decoration: none;
-        justify-content: center;
-    }
+    
     /*main > section:nth-of-type(2) > article > span > div > a > img:hover {    effet de zoom avec bordure verte au passage de souris (que en screen)
         box-shadow: inset 0 0 0 2px #1157be;
     } */
