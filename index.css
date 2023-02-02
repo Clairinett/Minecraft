@@ -1,6 +1,6 @@
 * {
     font-family: 'Noto Sans', sans-serif;
-    margin: initial;
+    margin: 0;
 }
 
 header {
@@ -73,13 +73,11 @@ header > nav {
     height: 85px;
 } 
 
-/*header > nav, header > nav > ul > li, header > nav > span, header > nav > a {      
+header > nav {      
     position: sticky;
     top: 0px;
     left: 0px;
-    right: 0px;
-
-}  */
+}  
 
 header > nav > ul, header > nav > ul > li {
     color:white;
@@ -108,19 +106,23 @@ header > nav > ul > li > a,  header > nav > ul > li > a:visited {
     color: white;
 }
 
+header > nav > ul > li > a:hover, header > nav > ul > li > a > img:hover, header > nav > ul > li:hover {
+    color: #93cd76;
+    filter: brightness(0) saturate(100%) invert(79%) sepia(64%) saturate(296%) hue-rotate(48deg) brightness(98%) contrast(83%);
+}
+
 header > nav > ul >li:first-of-type {
     padding-right: 30px;
 }
 
-header > nav > span > a > img {
-    width: 200px;              
-    height: 100px;
+header > nav > a {
     display: flex;
     justify-content: center;
     align-items: center;
-    align-content: center;
-    padding-right: 330px;
-}  
+    align-content:center;
+    width: 225px;              
+    padding-right: 290px;
+} 
 
 header > nav > div {
     color: white ;
@@ -186,7 +188,7 @@ main > section:nth-of-type(1) {
 }
 
 main > section:nth-of-type(1) > article {
-    padding: 100px 900px 50px 450px;   /*remettre à l'afpa padding-right 980px padding-left450*/
+    margin: 100px 900px 50px 450px;   /*remettre à l'afpa padding-right 980px padding-left450*/
     line-height: 23px;  /*de base 26px interline du paragraphe*/
 }
 
@@ -201,7 +203,7 @@ main > section:nth-of-type(1) > article > h1 {
 
 main > section:nth-of-type(1) > article > p:not(main > section:nth-of-type(1) > article > h1) {
     color: white;
-    font-size: 15px;
+    font-size: 18px;
     padding-bottom: 20px; /*de base 20 */
     line-height: 25px;
 }
@@ -311,6 +313,7 @@ main > section:nth-of-type(3) > article {
     align-items: center;
     align-content: center;
     padding-top: 50px
+    
 }
 
 main > section:nth-of-type(3) > article > h1 {
@@ -484,7 +487,13 @@ main > section:nth-of-type(5) > article > span > a, main > section:nth-of-type(5
 }
 
 main > section:nth-of-type(5) > article > p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-style: italic;
     padding-top: 100px;
+    margin-right: 300px;
+    margin-left: 300px;
 }
 
 
@@ -495,9 +504,8 @@ main > section:nth-of-type(5) > article > p {
 footer {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     position: relative;
-    top: 900px;
+    top: 925px;
     bottom: 0;
     left: 0;
 }
@@ -505,17 +513,28 @@ footer {
 footer > section:nth-of-type(1) {
     background-color: black;
     display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+}
+
+footer > section:nth-of-type(1) > h3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+footer > section:nth-of-type(1) > div > a, footer > section:nth-of-type(1) > div > a > img {
     height: 50px;
 }
 
 
-footer > section:nth-of-type(1) > a, footer > section:nth-of-type(1) > a > img {
-    height: 50px;
-}
+
+
+
 
 
 /*@media screen {
