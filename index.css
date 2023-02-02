@@ -148,7 +148,7 @@ header > nav > div > a > button {
     height: 3rem;
     width: 15rem;
     border: 0px;
-    margin-right: 15px;
+    -right: 15px;
     color: white;
     text-transform: uppercase;
     font-weight: 700;
@@ -175,8 +175,8 @@ main > section:nth-of-type(1) {
     background-position: top;
     background-repeat: no-repeat;  
     background-color: black;
-    background-size: 1080px;   
-    height: 540px;
+    background-size: 1200px;   
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -185,19 +185,25 @@ main > section:nth-of-type(1) {
     color: white;
 }
 
+main > section:nth-of-type(1) > article {
+    padding: 100px 900px 50px 450px;   /*remettre à l'afpa padding-right 980px padding-left450*/
+    line-height: 23px;  /*de base 26px interline du paragraphe*/
+}
+
 main > section:nth-of-type(1) > article > h1 {
     text-transform: uppercase;
-    font-size: 33px;    /*de base 36px*/
+    font-size: 36px;    /*de base 36px*/
     font-weight: 700;
-    line-height: 36px;    /*de base 35 px*/
+    line-height: 40px;    /*de base 35 px*/
     padding-bottom: 10px;  /*de base 15px */
     letter-spacing: 1px;
 }
 
-main > section:nth-of-type(1) > article > p {
+main > section:nth-of-type(1) > article > p:not(main > section:nth-of-type(1) > article > h1) {
     color: white;
-    font-size: 18px;
-    padding-bottom: 13px; /*de base 20 */
+    font-size: 15px;
+    padding-bottom: 20px; /*de base 20 */
+    line-height: 25px;
 }
 
 main > section:nth-of-type(1) > article > div {
@@ -491,7 +497,7 @@ footer {
     flex-direction: column;
     justify-content: flex-end;
     position: relative;
-    top: 0;
+    top: 900px;
     bottom: 0;
     left: 0;
 }
@@ -512,12 +518,12 @@ footer > section:nth-of-type(1) > a, footer > section:nth-of-type(1) > a > img {
 }
 
 
-@media screen {
+/*@media screen {
     main > section:nth-of-type(1) > article {
-        padding: 78px 925px 50px 525px;   /*remettre à l'afpa padding-right 980px padding-left450*/
-        line-height: 23px;  /*de base 26px interline du paragraphe*/
+        padding: 78px 980px 50px 450px;   /*remettre à l'afpa padding-right 980px padding-left450
+        line-height: 23px;  /*de base 26px interline du paragraphe
     }
-}
+}*/
 
 @media (max-width: 960px) {
     main > section:nth-of-type(1) > article { /*demi-écran pc*/
