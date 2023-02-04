@@ -1,6 +1,7 @@
 * {
     font-family: 'Noto Sans', sans-serif;
     margin: 0;
+    --bg-hover-icon : black;
 }
 
 header {
@@ -73,11 +74,11 @@ header > nav {
     height: 85px;
 } 
 
-header > nav {      
+/*header > nav {
     position: sticky;
     top: 0px;
     left: 0px;
-}  
+}  */
 
 header > nav > ul, header > nav > ul > li {
     color:white;
@@ -150,7 +151,7 @@ header > nav > div > a > button {
     height: 3rem;
     width: 15rem;
     border: 0px;
-    -right: 15px;
+    right: 15px;
     color: white;
     text-transform: uppercase;
     font-weight: 700;
@@ -371,15 +372,15 @@ main > section:nth-of-type(4) {
     background-image: url(https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/feature-content/trans-top-darkwool.png), url(https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/feature-content/trans-bottom-darkwool.png), url(https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/feature-content/bg-wool-light.png);
     background-repeat: repeat-x, repeat-x, repeat;
     background-position: top, bottom, top;  
-    padding: 150px 300px 150px 300px; 
+    padding: 150px 235px 150px 235px; 
 }
 
 main > section:nth-of-type(4) > article {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 115px;
-    padding-right: 115px;
+    /*padding-left: 115px;
+    padding-right: 115px;*/
 }
 
 main > section:nth-of-type(4) > article > div {
@@ -508,6 +509,9 @@ footer {
     top: 925px;
     bottom: 0;
     left: 0;
+    font-family: Helvetica Neue , Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    background-color: #111;
 }
 
 footer > section:nth-of-type(1) {
@@ -515,7 +519,7 @@ footer > section:nth-of-type(1) {
     display:flex;
     flex-direction: column;
     justify-content: center;
-    height: 150px;
+    height: 125px;
 }
 
 footer > section:nth-of-type(1) > h3 {
@@ -525,22 +529,163 @@ footer > section:nth-of-type(1) > h3 {
     color: white;
     text-transform: uppercase;
     font-size: 15px;
+    padding-bottom: 10px;
 }
 
-footer > section:nth-of-type(1) > div > a, footer > section:nth-of-type(1) > div > a > img {
-    height: 50px;
+footer > section:nth-of-type(1) > div, footer > section:nth-of-type(1) > div > a {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 40px;
+}
+
+footer > section:nth-of-type(1) > div > a > img:not(a) {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.socialicon :hover{
+    background-color: var(--bg-hover-icon);
 }
 
 
 
+
+footer > section:nth-of-type(2){
+    margin: 60px 175px 60px 175px;
+    background-color: #111;
+    height: 310px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+footer > section:nth-of-type(2) > span, footer > section:nth-of-type(2) > div, footer > section:nth-of-type(2) > img {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+footer > section:nth-of-type(2) > span > div {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+footer > section:nth-of-type(2) > span > div > img {
+    height: 110px;
+    padding-right: 70px;
+    padding-bottom: 40px;
+}
+
+footer > section:nth-of-type(2) > span > p {
+    color: #d1cfce;
+    padding-bottom: 10px;
+}
+
+footer > section:nth-of-type(2) > span > ul, footer > section:nth-of-type(2) > span > ul > li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+    color: #a0e080;
+}
+
+footer > section:nth-of-type(2) > span > ul > li + li {
+    border-left: 1px solid #fff;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+/*footer > section:nth-of-type(2) > span > ul > li:last-of-type {
+    padding-right: 250px;
+}*/
+
+
+
+
+footer > section:nth-of-type(2) > div {
+    display: flex;
+    flex-direction: row;
+    color: #a0e080;
+}
+
+footer > section:nth-of-type(2) > div > span > ul > li > h3, footer > section:nth-of-type(2) > div > div > ul > li > h3 {
+    color: white;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+footer > section:nth-of-type(2) > div > span > ul, footer > section:nth-of-type(2) > div > div > ul {
+    list-style-type: none;
+    padding-bottom: 12px;
+    line-height: 21px;
+}
+
+footer > section:nth-of-type(2) > div > span > ul > li, footer > section:nth-of-type(2) > div > div > ul > li {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer > section:nth-of-type(2) > div > div {
+    padding-right: 110px;
+}
+
+footer > section:nth-of-type(2) > div > span {
+    padding-right: 50px;
+}
+
+footer > section:nth-of-type(2) > img {
+    height: 125px;
+    width: auto;
+}
+
+
+
+
+
+
+footer > section:nth-of-type(3) > ul, footer > section:nth-of-type(3) > ul > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: white;
+    font-size: 12px;
+    list-style-type: none;
+    height: 90px;
+    background-color: #313131;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-weight: 400;
+}
+
+footer > section:nth-of-type(3) > ul > li:first-of-type, footer > section:nth-of-type(3) > ul > li:last-of-type {
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+footer > section:nth-of-type(3) > ul > li:first-of-type > img {
+    height: 25px;
+    padding-right: 7px;
+}
+
+footer > section:nth-of-type(3) > ul > li > a, footer > section:nth-of-type(3) > ul > li > a:visited {
+    text-decoration: none;
+    color: white;
+}
 
 
 
 
 /*@media screen {
     main > section:nth-of-type(1) > article {
-        padding: 78px 980px 50px 450px;   /*remettre à l'afpa padding-right 980px padding-left450
-        line-height: 23px;  /*de base 26px interline du paragraphe
+        padding: 78px 980px 50px 450px;   remettre à l'afpa padding-right 980px padding-left450
+        line-height: 23px;  de base 26px interline du paragraphe
     }
 }*/
 
