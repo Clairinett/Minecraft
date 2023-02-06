@@ -20,7 +20,7 @@ header > div {
     /*position: fixed;*/
 }
 
-header > div > span, header > div > span > a {
+header > div > a {
     display: flex;
     justify-content: left;
     align-items: center;
@@ -28,14 +28,14 @@ header > div > span, header > div > span > a {
     margin-left: 28px;
     color: #a0e081;
     text-decoration: none;
-    font-size: 9.5px; /*de base c'est 11px */
+    font-size: 10px; /*de base c'est 11px */
     font-family: Helvetica Neue ,Helvetica,Arial,sans-serif;
     font-weight: 400;
     letter-spacing: 1.5;
     line-height: initial;
 }
 
-header > div > span:hover, header > div > span > a:hover {
+header > div > a:hover {
     color: white;
     text-decoration: underline;
 }
@@ -179,21 +179,17 @@ main > section:nth-of-type(1) {
     background-repeat: no-repeat;  
     background-color: black;
     background-size: 1200px;   
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-content: center;
-    text-align: left;
+    height: 500px;
     color: white;
+    padding: 100px 910px 0px 450px;
 }
 
-main > section:nth-of-type(1) > article {
-    margin: 100px 900px 50px 450px;   /*remettre à l'afpa padding-right 980px padding-left450*/
-    line-height: 23px;  /*de base 26px interline du paragraphe*/
-}
+/*main > section:nth-of-type(1) {
+       remettre à l'afpa padding-right 980px padding-left450,de base 26px interline du paragraphe 
+    line-height: 23px; 
+}*/
 
-main > section:nth-of-type(1) > article > h1 {
+main > section:nth-of-type(1) > h1 {
     text-transform: uppercase;
     font-size: 36px;    /*de base 36px*/
     font-weight: 700;
@@ -202,20 +198,20 @@ main > section:nth-of-type(1) > article > h1 {
     letter-spacing: 1px;
 }
 
-main > section:nth-of-type(1) > article > p:not(main > section:nth-of-type(1) > article > h1) {
+main > section:nth-of-type(1) > p {
     color: white;
     font-size: 18px;
     padding-bottom: 20px; /*de base 20 */
     line-height: 25px;
 }
 
-main > section:nth-of-type(1) > article > div {
+main > section:nth-of-type(1) > a {
     text-decoration: none;
     padding-top: 30px;
     color: white;
 } 
 
-main > section:nth-of-type(1) > article > div > a > button, main > section:nth-of-type(5) > article > button {
+main > section:nth-of-type(1) > a > button, main > section:nth-of-type(5) > a > button {
     background-color: #3b8526;
     box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c, 0 4px rgb(0 0 0 / 25%); 
     color: white;
@@ -227,7 +223,7 @@ main > section:nth-of-type(1) > article > div > a > button, main > section:nth-o
     padding: 5px 50px;
 }
 
-main > section:nth-of-type(1) > article > div > a > button:hover, main > section:nth-of-type(5) > article > button:hover {
+main > section:nth-of-type(1) > a > button:hover, main > section:nth-of-type(5) > button:hover {
     background-color: #171615;
     transition: all .25s, opacity .75s .5s;
     box-shadow: inset 0 0 0 2px #1157be;
@@ -236,7 +232,7 @@ main > section:nth-of-type(1) > article > div > a > button:hover, main > section
     cursor: pointer;
 }
 
-main > section:nth-of-type(1) > article > div > a:visited, main > section:nth-of-type(1) > article > div > a > button:visited, main > section:nth-of-type(5) > article > button, main > section:nth-of-type(5) > article > button:visited {
+main > section:nth-of-type(1) > article > a:visited, main > section:nth-of-type(1) > article > a > button:visited, main > section:nth-of-type(5) > article > button, main > section:nth-of-type(5) > article > button:visited {
     color: white;
     text-decoration: none;
 }
@@ -305,19 +301,15 @@ main > section:nth-of-type(3) {
     background-image: url(https://www.minecraft.net/content/dam/minecraft/backgrounds/bg-wool-dark.png);
     background-repeat: repeat;
     height: 575px;
-}           
-
-main > section:nth-of-type(3) > article {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
     padding-top: 50px
-    
-}
+}           
 
-main > section:nth-of-type(3) > article > h1 {
+main > section:nth-of-type(3) > h1 {
     display: flex;
     justify-content: center;
     text-transform: uppercase;
@@ -329,12 +321,12 @@ main > section:nth-of-type(3) > article > h1 {
     padding-bottom: 50px;
 }
 
-main > section:nth-of-type(3) > article > div > a > img {
+main > section:nth-of-type(3) > div > a > img {   /* a revoir la bordur verte, voir html qui a changer*/
     padding-bottom: 25px;
     padding-right: 30px;
 } 
 
-main > section:nth-of-type(3) > article > div > p {
+main > section:nth-of-type(3) > div > p {
     font-size: 20px;
     text-align: center;
     padding-right: 10px;
@@ -343,7 +335,7 @@ main > section:nth-of-type(3) > article > div > p {
     color: white;
 }
 
-main > section:nth-of-type(3) > article > div > a {
+main > section:nth-of-type(3) > div > a {
     padding-top: 20px;
     padding-left: 30px;
     text-transform: uppercase;
@@ -355,9 +347,10 @@ main > section:nth-of-type(3) > article > div > a {
     text-align: center;
     text-decoration: none;
     justify-content: center;
+    
 }
 
-main > section:nth-of-type(3) > article > div > a > span > img:hover {
+main > section:nth-of-type(3) > div > a > img:hover {
     border: solid 3px #2a631c;
     /*toujours le problème de la bordure qu ibouge l'image*/
 
@@ -551,6 +544,7 @@ footer > section:nth-of-type(1) > div > a > img:not(a) {
 
 
 
+
 footer > section:nth-of-type(2){
     margin: 60px 175px 60px 175px;
     background-color: #111;
@@ -682,12 +676,26 @@ footer > section:nth-of-type(3) > ul > li > a, footer > section:nth-of-type(3) >
 
 
 
-/*@media screen {
-    main > section:nth-of-type(1) > article {
-        padding: 78px 980px 50px 450px;   remettre à l'afpa padding-right 980px padding-left450
-        line-height: 23px;  de base 26px interline du paragraphe
+
+
+
+
+@media screen {
+    footer > section:nth-of-type(2) > span {
+        margin-left: 190px;
     }
-}*/
+    footer > section:nth-of-type(2) > img {
+        margin-right: 190px;
+    }
+    
+}
+
+@media screen {
+    main > section:nth-of-type(1) > article {
+        padding: 5px 0px 0px 10px;   /*remettre à l'afpa padding-right 980px padding-left450*/
+        line-height: 23px;  /*de base 26px interline du paragraphe*/
+    }
+}
 
 @media (max-width: 960px) {
     main > section:nth-of-type(1) > article { /*demi-écran pc*/
